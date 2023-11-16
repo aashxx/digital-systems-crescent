@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BsCheck2All } from 'react-icons/bs';
 import { GiProcessor } from 'react-icons/gi';
 import { Link } from 'react-router-dom';
@@ -43,6 +43,10 @@ const Home = () => {
         }
     }
   }
+
+  useEffect(() => {
+    document.title = `Digital Systems`;
+  }, [])
 
   return (
     <div className='text-nexa-900 font-poppins'>

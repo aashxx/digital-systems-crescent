@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { TbLogicXnor } from 'react-icons/tb';
 import { LuBinary } from 'react-icons/lu';
 import { GiCircuitry } from 'react-icons/gi';
@@ -7,6 +7,10 @@ import { GiGears } from 'react-icons/gi';
 import { Link } from 'react-router-dom';
 
 const Theory = () => {
+
+  useEffect(() => {
+    document.title = `Digital Systems - Theory`;
+  }, [])
 
   return (
     <div>

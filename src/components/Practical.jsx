@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { animations } from '../App';
 
 const Practical = () => {
+
+  useEffect(() => {
+    document.title = `Digital Systems - Laboratory`;
+  }, [])
 
   return (
     <div className='font-poppins text-nexa-900'>

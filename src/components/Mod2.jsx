@@ -13,6 +13,7 @@ const Mod2 = () => {
   const db = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQ4q-CQKtQQ9lgIo9BgX7QHLw-_AfdqtZmPfW8o9kSxHue0NkllAGVvA6A_IXhc1xApNlEqbFoWadAR/pub?gid=393082984&single=true&output=csv';
 
   useEffect(() => {
+    document.title = `Digital Systems - Module 2`;
     fetchData(db);
   }, [])
 
